@@ -32,15 +32,6 @@ jobs:
         with:
           elixir-version: "1.17.2" # [Required] Define the Elixir version
           otp-version: "OTP 27.0.1" # [Required] Define the Erlang/OTP version
-      - name: Cache Mix
-        uses: actions/cache@v3
-        with:
-          path: |
-            deps
-            _build
-          key: ${{ runner.os }}-mix-1.17.2-27.0.1-${{ hashFiles('**/mix.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-mix-1.17.2-27.0.1-
       - name: Install mix dependencies
         run: mix deps.get
       - name: Check formatting

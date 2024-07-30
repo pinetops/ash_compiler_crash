@@ -8,13 +8,11 @@ defmodule AshCompilerCrash.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      AshCompilerCrashWeb.Telemetry,
       AshCompilerCrash.Repo,
       {DNSCluster,
        query: Application.get_env(:ash_compiler_crash, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: AshCompilerCrash.PubSub},
       # Start the Finch HTTP client for sending emails
-      {Finch, name: AshCompilerCrash.Finch},
       # Start a worker by calling: AshCompilerCrash.Worker.start_link(arg)
       # {AshCompilerCrash.Worker, arg},
       # Start to serve requests, typically the last entry

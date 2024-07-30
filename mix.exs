@@ -34,6 +34,7 @@ defmodule Teamology.MixProject do
   defp deps do
     [
       {:ash, "~> 3.3.0"},
+      {:spark, "~> 2.2.11"},
       {:phoenix, "~> 1.7.12"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.10"},

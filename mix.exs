@@ -39,7 +39,6 @@ defmodule Teamology.MixProject do
       {:ecto_sql, "~> 3.10"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 4.0"},
-      {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_live_view, "~> 1.0.0-rc.6", override: true},
       {:floki, ">= 0.30.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.8.3"},
@@ -79,7 +78,6 @@ defmodule Teamology.MixProject do
       {:ash_oban, "~> 0.2.3"},
       {:httpoison, "~> 2.2.1"},
       {:faker, "~> 0.18", only: :test},
-      {:chromic_pdf, "~> 1.16.1"},
       {:ash_archival, github: "ash-project/ash_archival"},
       {:ash_state_machine, "~> 0.2.5"},
       {:mimic, "~> 1.9.0", only: :test}

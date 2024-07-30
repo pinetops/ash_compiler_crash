@@ -10,7 +10,8 @@ defmodule AshCompilerCrash.Application do
     children = [
       AshCompilerCrashWeb.Telemetry,
       AshCompilerCrash.Repo,
-      {DNSCluster, query: Application.get_env(:ash_compiler_crash, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:ash_compiler_crash, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: AshCompilerCrash.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: AshCompilerCrash.Finch},

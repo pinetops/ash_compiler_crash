@@ -22,6 +22,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Set image name
+      id: set-image-name
+      run: echo "image-name=gcr.io/placeholder-image-name" >> $GITHUB_OUTPUT
+
     - name: Build
       run: |-
         docker build \

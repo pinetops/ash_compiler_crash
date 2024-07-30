@@ -60,29 +60,7 @@ defmodule Teamology.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.2"},
-      {:langchain, git: "https://github.com/u2i/langchain.git"},
-      {:ash_authentication, "~> 4.0.1"},
-      {:ash_authentication_phoenix, "~> 2.0.0"},
-      {:ash_postgres, "~> 2.1.17"},
-      {:ash_phoenix, "~> 2.1.0"},
-      {:tds, "~> 2.3"},
-      {:timex, "~> 3.0"},
-      {:google_api_text_to_speech, "~> 0.17"},
-      {:goth, "~> 1.4.3"},
-      {:inflex, "~> 2.1.0"},
-      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:uuid, "~> 1.1"},
-      {:adept_svg, "~> 0.3.1"},
-      {:picosat_elixir, "~> 0.2.3"},
-      {:recase, "~> 0.5"},
-      {:oban, "~> 2.18"},
-      {:ash_oban, "~> 0.2.3"},
-      {:httpoison, "~> 2.2.1"},
-      {:faker, "~> 0.18", only: :test},
-      {:chromic_pdf, "~> 1.16.1"},
-      {:ash_archival, github: "ash-project/ash_archival"},
-      {:ash_state_machine, "~> 0.2.5"},
-      {:mimic, "~> 1.9.0", only: :test}
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
 

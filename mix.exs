@@ -3,7 +3,7 @@ defmodule Teamology.MixProject do
 
   def project do
     [
-      app: :teamology,
+      app: :ash_compiler_crash,
       version: "0.1.0",
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule Teamology.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Teamology.Application, []},
+      mod: {AshCompilerCrash.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -99,10 +99,10 @@ defmodule Teamology.MixProject do
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
-      "assets.build": ["tailwind teamology", "esbuild teamology"],
+      "assets.build": ["tailwind ash_compiler_crash", "esbuild ash_compiler_crash"],
       "assets.deploy": [
-        "tailwind teamology --minify",
-        "esbuild teamology --minify",
+        "tailwind ash_compiler_crash --minify",
+        "esbuild ash_compiler_crash --minify",
         "phx.digest"
       ]
     ]

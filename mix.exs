@@ -72,15 +72,7 @@ defmodule Teamology.MixProject do
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:uuid, "~> 1.1"},
       {:adept_svg, "~> 0.3.1"},
-      {:picosat_elixir, "~> 0.2.3"},
-      {:recase, "~> 0.5"},
-      {:oban, "~> 2.18"},
-      {:ash_oban, "~> 0.2.3"},
-      {:httpoison, "~> 2.2.1"},
-      {:faker, "~> 0.18", only: :test},
-      {:ash_archival, github: "ash-project/ash_archival"},
-      {:ash_state_machine, "~> 0.2.5"},
-      {:mimic, "~> 1.9.0", only: :test}
+      {:recase, "~> 0.5"}
     ]
   end
 
